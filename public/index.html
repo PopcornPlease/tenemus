@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Zaengle</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{% if description %}{{ description }}{% else %}My name is Kevin and I teach people how to make the web and how to make it look good while they are at it.{% endif %}">    
+
+    <meta property="og:title" content="{% if social-title %}{{ social-title }}{% else %}{{ title }} | {{ title }}{% endif %}">
+    <meta property="og:description" content="{% if social-description %}{{ social-description }}{% elif  description %}{{description}}{% else %}{{ description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}">
+    <meta property="og:image" content="{% if social-image %}{{ social-image }}{% else %}{{ site.url | url | absoluteUrl(metadata.url) }}img/brand-icon.png{% endif %}">
+    <meta name="twitter:image" content="{% if social-image %}{{ social-image }}{% else %}{{ site.url | url | absoluteUrl(metadata.url) }}img/brand-icon.png{% endif %}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="">
+	<header>
+	</header>
+	<main id="main-content">
+		<div class="container">
+            <section aria-labelledby="hero-title" class="hero">
+                <h1 id="hero-title" class="hero__title">Jacob Zaenlge</h1>
+            </section>
+        </div>
+	</main>
+</body>
